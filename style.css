@@ -67,29 +67,75 @@ body {
 }
 
 header {
-  background: #333;
-  color: #fff;
+  background: #fff; /* or your dark theme bg */
   padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-nav {
+/* Dark mode */
+body.dark header {
+  background-color: #000;
+  color: #fff;
+}
+
+body.dark nav ul li a,
+body.dark #themeToggle {
+  color: #fff;
+}
+
+.nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* makes it stack on small screens */
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 nav ul {
   display: flex;
   list-style: none;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
-nav li {
-  margin-left: 20px;
-}
-
-nav a {
-  color: #fff;
+nav ul li a {
   text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+#themeToggle {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .nav-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 
 section {
@@ -147,17 +193,67 @@ body.light nav a {
 }
 
 body.dark {
-  background-color: #121212;
-  color: #f4f4f4;
+  background-color: #121212; /* Black background for dark mode */
+  color: #f4f4f4; /* Light text for dark mode */
 }
 
-body.dark h1 {
-  background-color: #1e1e1e;
+body.dark header {
+  background-color: #000; /* Black background for header */
+  color: #fff; /* White text for header */
 }
 
-body.dark nav a {
-  color: #f4f4f4;
+body.dark nav ul li a,
+body.dark #themeToggle {
+  color: #fff; /* White text for links and theme toggle */
 }
+
+body.dark section {
+  background-color: #121212; /* Black background for all sections */
+}
+body.dark .experience-item{
+  background-color: #121212; /* Dark background for project section */
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+body.dark #experience,
+body.dark .experience-h3,
+body.dark .experience-h4,
+body.dark .experience-li,
+body.dark .duration{
+  background-color: #121212; /* Dark background for project section */
+  color: #fff;
+ }
+body.dark .achievement-item{
+  background-color: #121212; /* Dark background for project section */
+  color: #fff;
+  border: 1px solid #fff;
+}
+body.dark #achievements,
+body.dark .achievements-head,
+body.dark .achievements-h4,
+body.dark .achievements-p {
+  background-color: #121212; /* Dark background for project section */
+  color: #fff;
+}
+
+body.dark .modal-content {
+  background-color: #1e1e1e; /* Dark background for modal */
+}
+
+body.dark .carousel-container {
+  background-color: #1e1e1e; /* Dark background for carousel */
+}
+
+body.dark .carousel-slide {
+  background-color: #1e1e1e; /* Dark background for carousel slide */
+}
+
+body.dark footer {
+  background-color: #000; /* Black background for footer */
+  color: #fff; /* White text for footer */
+}
+
 
 #themeToggle {
   padding: 5px 10px;
@@ -319,11 +415,6 @@ body.dark nav a {
   background-color: #f9f9f9;
 }
 
-#experience h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 2rem;
-}
 
 .experience-item {
   background-color: #ffffff;
@@ -364,13 +455,6 @@ body.dark nav a {
 #achievements {
   padding: 40px 20px;
   background-color: #fff;
-}
-
-#achievements h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 2rem;
-  color: #333;
 }
 
 .achievement-list {
