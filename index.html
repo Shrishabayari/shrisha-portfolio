@@ -1,77 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shrisha Bayari | Portfolio</title>
-    <link rel="icon" href="../shrisha-portfolio/assets/icon.ico" type="image/x-icon" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" >
+    <link rel="icon" href="../shrisha-portfolio/assets/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Shrisha Bayari</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <button id="themeToggle">🌙 Toggle Theme</button>
-            </ul>
-        </nav>
+      <h1>Shrisha Bayari</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <button id="themeToggle">🌙 Toggle Theme</button>
+        </ul>
+      </nav>
     </header>
-    
-    <section id="hero">
-        <h2>Hi, I'm Shrisha Bayari 👋</h2>
-        <p>A Full-Stack Developer passionate about building web apps</p>
-        <img class="img" src="../shrisha-portfolio/assets/ShrishaBayari.jpg" alt="Shrisha Bayari's profile picture">
-        <div class="contact-info">
-          <p><strong>Email:</strong> bayarishrisha@gmail.com</p>
-          <p><strong>Phone:</strong> 7348941247</p>
-          <p><strong>Location:</strong> Brahmavar, Udupi, karnataka, India</p>
-        </div>
+
+    <section id="hero" class="fade-in">
+      <h2>Hi, I'm Shrisha Bayari 👋</h2>
+      <p>A Full-Stack Developer passionate about building web apps</p>
+      <img class="img" src="../shrisha-portfolio/assets/ShrishaBayari.jpg" alt="Shrisha Bayari's profile picture">
+      <div class="contact-info">
+        <p><strong>Email:</strong> bayarishrisha@gmail.com</p>
+        <p><strong>Phone:</strong> 7348941247</p>
+        <p><strong>Location:</strong> Brahmavar, Udupi, karnataka, India</p>
+      </div>
     </section>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-          Hello! I'm <strong>Shrisha Bayari</strong>, a passionate and detail-oriented <strong>Full-Stack Web Developer</strong> from Brahmavar, Udupi, Karnataka. I recently completed my MCA from <strong>Srinivas University, Mangalore</strong> with a CGPA of 7.83.
-        </p>
-        <p>
-          Over the past year, I've built hands-on experience through multiple internships, working on real-world projects using the <strong>MERN stack (MongoDB, Express.js, React.js, Node.js)</strong>. I’ve developed and contributed to applications like  <em>LSM</em> (a library management system), focusing on clean UI/UX and optimized backend functionality.
-        </p>
-        <p>
-          I'm a <strong>quick learner</strong>, a <strong>good listener</strong>, and always eager to learn and adapt to new technologies. My goal is to create meaningful digital experiences and grow continuously as a developer while contributing to impactful projects.
-        </p>
-        <p>
-          When I’m not coding, I love exploring AI tools like ChatGPT, improving my soft skills, and staying updated with the latest in tech.
-        </p>
-        <p><em>Let’s connect and build something awesome together!</em></p>
+
+    <section id="about" class="fade-in fade-in-left" data-delay="100">      <h2>About Me</h2>
+      <p>Hello! I'm <strong>Shrisha Bayari</strong>, a passionate and detail-oriented <strong>Full-Stack Web Developer</strong> from Brahmavar, Udupi, Karnataka. I recently completed my MCA from <strong>Srinivas University, Mangalore</strong> with a CGPA of 7.83.</p>
+      <p>Over the past year, I've built hands-on experience through multiple internships, working on real-world projects using the <strong>MERN stack (MongoDB, Express.js, React.js, Node.js)</strong>. I’ve developed and contributed to applications like <em>LSM</em> (a library management system), focusing on clean UI/UX and optimized backend functionality.</p>
+      <p>I'm a <strong>quick learner</strong>, a <strong>good listener</strong>, and always eager to learn and adapt to new technologies. My goal is to create meaningful digital experiences and grow continuously as a developer while contributing to impactful projects.</p>
+      <p>When I’m not coding, I love exploring AI tools like ChatGPT, improving my soft skills, and staying updated with the latest in tech.</p>
+      <p><em>Let’s connect and build something awesome together!</em></p>
     </section>
-      
-    <section id="education">
-        <h2 class="educationHeading">🎓 Education</h2>
-        <div class="eduItem">
-          <h3 class="eduHeading">Master of Computer Applications (MCA)</h3>
-          <p>Srinivas University, Mangalore</p>
-          <p><strong>CGPA:</strong> 7.83</p>
-          <p><strong>Year:</strong> 2022 – 2024</p>
-        </div>
-        <div class="eduItem">
-          <h3 class="eduHeading">Bachelor of Computer Applications (BCA)</h3>
-          <p>SMS College, Brahmavar</p>
-          <p><strong>CGPA:</strong> 7.01</p>
-          <p><strong>Year:</strong> 2019 – 2022</p>
-        </div>
+
+    <section id="skills" class="fade-in" data-delay="300">      <h2>Programming Languages</h2>
+      <div class="skill">
+        <p>HTML</p>
+        <div class="progress-bar" data-progress="90"></div>
+      </div>
+      <div class="skill">
+        <p>CSS</p>
+        <div class="progress-bar" data-progress="85"></div>
+      </div>
+      <div class="skill">
+        <p>JavaScript</p>
+        <div class="progress-bar" data-progress="80"></div>
+      </div>
+      <div class="skill">
+        <p>React</p>
+        <div class="progress-bar" data-progress="60"></div>
+      </div>
+      <div class="skill">
+        <p>Tailwind</p>
+        <div class="progress-bar" data-progress="50"></div>
+      </div>
+      <div class="skill">
+        <p>Node.js</p>
+        <div class="progress-bar" data-progress="50"></div>
+      </div>
+      <div class="skill">
+        <p>Express.js</p>
+        <div class="progress-bar" data-progress="60"></div>
+      </div>
+      <div class="skill">
+        <p>MongoDB</p>
+        <div class="progress-bar" data-progress="80"></div>
+      </div>
+      <div class="skill">
+        <p>Vue</p>
+        <div class="progress-bar" data-progress="70"></div>
+      </div>
+      <div class="skill">
+        <p>SQL</p>
+        <div class="progress-bar" data-progress="75"></div>
+      </div>
+      <div class="skill">
+        <p>Git</p>
+        <div class="progress-bar" data-progress="80"></div>
+      </div>
     </section>
-      
-    <section id="projects">
-      <div class="projects-container">
+
+    <section id="projects" class="fade-in fade-in-right" data-delay="200">      <div class="projects-container">
         <h2>🚀 Projects</h2>
         <p>Take a look at some of my work</p>
-        <!-- Project 1 -->
+
         <div class="project-thumbnail">
           <div class="thumbnail-content">
             <img src="assets/quiz.png" alt="Quiz Application" />
@@ -80,7 +101,7 @@
             <a href="#" class="btn know-more" data-modal-target="#projectModal1">Know More</a>
           </div>
         </div>
-        <!-- Project 2 -->
+
         <div class="project-thumbnail">
           <div class="thumbnail-content">
             <img src="assets/netflix.webp" alt="Netflix Clone" />
@@ -91,98 +112,162 @@
         </div>
       </div>
     </section>
-      
+
     <div id="projectModal1" class="Modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Quiz Application</h2>
-            <hr>
-            <div class="modal-body">
-            <div class="modal-row">
-                <div class="column description">
-                <p><strong>Short Project Overview:</strong> This quiz application allows users to pick a topic and answer multiple-choice questions.</p>
-                <h3>Project Details</h3>
-                <ul>
-                    <li>Users can select quiz topics</li>
-                    <li>Dynamic question and answer rendering</li>
-                    <li>Score tracking and result display</li>
-                </ul>
-                </div>
-                <div class="column image-carousel">
-                <div class="carousel-container">
-                    <div class="carousel-slide">
-                    <img src="assets/quiz.png" alt="Quiz App" />
-                    <img src="assets/q1.png" alt="Quiz App 1" />
-                    <img src="assets/q2.png" alt="Quiz App 2" />
-                    <img src="assets/q3.png" alt="Quiz App 3" />
-                    <img src="assets/q4.png" alt="Quiz App 4" />
-                    <img src="assets/q5.png" alt="Quiz App 5" />
-                    </div>
-                    <a class="prev">&#10094;</a>
-                    <a class="next">&#10095;</a>
-                </div>
-                </div>
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Quiz Application</h2>
+        <hr>
+        <div class="modal-body">
+          <div class="modal-row">
+            <div class="column description">
+              <p><strong>Short Project Overview:</strong> This quiz application allows users to pick a topic and answer multiple-choice questions.</p>
+              <h3>Project Details</h3>
+              <ul>
+                <li>Users can select quiz topics</li>
+                <li>Dynamic question and answer rendering</li>
+                <li>Score tracking and result display</li>
+              </ul>
             </div>
+            <div class="column image-carousel">
+              <div class="carousel-container">
+                <div class="carousel-slide">
+                  <img src="assets/quiz.png" alt="Quiz App" />
+                  <img src="assets/q1.png" alt="Quiz App 1" />
+                  <img src="assets/q2.png" alt="Quiz App 2" />
+                  <img src="assets/q3.png" alt="Quiz App 3" />
+                  <img src="assets/q4.png" alt="Quiz App 4" />
+                  <img src="assets/q5.png" alt="Quiz App 5" />
+                </div>
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-        
-        <!-- Modal 2 -->
+
     <div id="projectModal2" class="Modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Netflix Homepage Clone</h2>
-            <hr>
-            <div class="modal-body">
-            <div class="modal-row">
-                <div class="column description">
-                <p><strong>Short Project Overview:</strong> A fully responsive Netflix landing page clone built with HTML & CSS.</p>
-                <h3>Project Highlights</h3>
-                <ul>
-                    <li>Responsive layout</li>
-                    <li>Modern design with CSS grid/flex</li>
-                    <li>Fully animated scroll effects</li>
-                </ul>
-                </div>
-                <div class="column image-carousel">
-                <div class="carousel-container">
-                    <div class="carousel-slide">
-                    <img src="assets/netflix.webp" alt="Netflix 1" />
-                    <img src="assets/netflix2.webp" alt="Netflix 2" />
-                    </div>
-                    <a class="prev">&#10094;</a>
-                    <a class="next">&#10095;</a>
-                </div>
-                </div>
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Netflix Homepage Clone</h2>
+        <hr>
+        <div class="modal-body">
+          <div class="modal-row">
+            <div class="column description">
+              <p><strong>Short Project Overview:</strong> A fully responsive Netflix landing page clone built with HTML & CSS.</p>
+              <h3>Project Highlights</h3>
+              <ul>
+                <li>Responsive layout</li>
+                <li>Modern design with CSS grid/flex</li>
+                <li>Fully animated scroll effects</li>
+              </ul>
             </div>
+            <div class="column image-carousel">
+              <div class="carousel-container">
+                <div class="carousel-slide">
+                  <img src="assets/netflix.webp" alt="Netflix 1" />
+                  <img src="assets/netflix2.webp" alt="Netflix 2" />
+                </div>
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>MERN Stack</li>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>Node.js</li>
-      <li>MongoDB</li>
-      <li>Git & GitHub</li>
-    </ul>
-  </section>
+    <section id="experience" class="fade-in">
+      <h2>Internship Experience</h2>
+      <div class="experience-item">
+        <h3>Full Stack Developer Intern</h3>
+        <h4>Unified Mentor Pvt Ltd</h4>
+        <p class="duration">April 2025 – Present</p>
+        <ul>
+          <li>Developing an Electric Vehicle Recharge Bunk Management System using the MERN stack</li>
+          <li>Implementing features like slot booking, charging status tracking, and payment gateway integration</li>
+          <li>Collaborating with backend team to integrate REST APIs and MongoDB data models</li>
+        </ul>
+      </div>
+      <div class="experience-item">
+        <h3>AI And ChatGPT Intern</h3>
+        <h4>Pantech Solutions</h4>
+        <p class="duration">Oct 2023 – Nov 2023</p>
+        <ul>
+          <li>Explored use cases of ChatGPT and integrated it into mini web projects</li>
+          <li>Learned prompt engineering and OpenAI API basics</li>
+          <li>Built a chatbot interface using HTML, CSS and JS</li>
+        </ul>
+      </div>
+      <div class="experience-item">
+        <h3>Full Stack Developer Intern</h3>
+        <h4>Pantech Solutions</h4>
+        <p class="duration">Aug 2024 – Oct 2024</p>
+        <ul>
+          <li>Built a responsive inventory dashboard using React and Chart.js</li>
+          <li>Created RESTful APIs with Express.js and integrated MongoDB</li>
+          <li>Worked with authentication using JWT and user role management</li>
+        </ul>
+      </div>
+      <div class="experience-item">
+        <h3>Full Stack Developer Intern</h3>
+        <h4>Zephyr Tchnologies and Solutions Pvt Ltd</h4>
+        <p class="duration">Jun 2024 – jul 2024</p>
+        <ul>
+          <li>Developed reusable UI components using React and Tailwind CSS</li>
+          <li>Collaborated with designers to implement pixel-perfect designs</li>
+          <li>Improved page load time by optimizing images and lazy loading</li>
+        </ul>
+      </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:bayarishrisha@gmail.com"><i class="fas fa-envelope"></i>bayarishrisha@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/shrisha-bayari/"><i class="fab fa-linkedin"></i>ShrishaBayari</a></p>
-    <p>GitHub: <a href="https://github.com/Shrishabayari">ShrishaBayari</a></p>
-  </section>
+    <section id="education" class="fade-in">
+      <h2 class="educationHeading">🎓 Education</h2>
+      <div class="eduItem">
+        <h3 class="eduHeading">Master of Computer Applications (MCA)</h3>
+        <p>Srinivas University, Mangalore</p>
+        <p><strong>CGPA:</strong> 7.83</p>
+        <p><strong>Year:</strong> 2022 – 2024</p>
+      </div>
+      <div class="eduItem">
+        <h3 class="eduHeading">Bachelor of Computer Applications (BCA)</h3>
+        <p>SMS College, Brahmavar</p>
+        <p><strong>CGPA:</strong> 7.01</p>
+        <p><strong>Year:</strong> 2019 – 2022</p>
+      </div>
+    </section>
 
-  <footer>
-    <p>© 2025 Shrisha Bayari</p>
-  </footer>
+    <section id="achievements" class="fade-in">
+      <h2>Achievements & Certifications</h2>
+      <div class="achievement-list">
+        <div class="achievement-item">
+          <h4>Full Stack Web Development</h4>
+          <p>Udemy – Completed a 5-month course covering MERN Stack</p>
+        </div>
+        <div class="achievement-item">
+          <h4>AI & ChatGPT Internship</h4>
+          <p>Pantech Solutions - 1-month internship focused on AI tools and prompt engineering</p>
+        </div>
+        <div class="achievement-item">
+          <h4>Full-Stack Mastery</h4>
+          <p>Completed Full-Stack Bootcamp on Aframe-Technologies with hands-on projects</p>
+        </div>
+      </div>
+    </section>
 
-  <script src="script.js"></script>
-</body>
+    <section id="contact" class="fade-in">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:bayarishrisha@gmail.com"><i class="fas fa-envelope"></i>bayarishrisha@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/shrisha-bayari/"><i class="fab fa-linkedin"></i>ShrishaBayari</a></p>
+      <p>GitHub: <a href="https://github.com/Shrishabayari">ShrishaBayari</a></p>
+    </section>
+
+    <footer>
+      <p>© 2025 Shrisha Bayari</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
