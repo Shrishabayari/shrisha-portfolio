@@ -86,6 +86,16 @@ body.dark #themeToggle {
   color: #fff;
 }
 
+/* Dark mode for nav links */
+body.dark .nav-links {
+  color: #fff;
+  background-color: #000;
+}
+
+/* Dark mode for hamburger spans */
+body.dark .hamburger span {
+  background-color: #fff;
+}
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -112,30 +122,78 @@ nav ul li a {
   color: #333;
   font-weight: 500;
 }
-
-#themeToggle {
-  background: none;
-  border: none;
-  font-size: 1rem;
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
   cursor: pointer;
+  gap: 5px;
 }
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Small screen styles */
 @media (max-width: 768px) {
-  .nav-container {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    background-color: #fff;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
+    gap: 15px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
   }
 
+  
+  .nav-links.show {
+    display: flex;
+  }
+  .nav-icons{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* allows wrapping only on small screens */
+    padding: 1rem 2rem;
+  }
+
+  .nav-left {
+    flex: 1; /* allows it to take available space */
+  }
+  
   .nav-right {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 
   nav ul {
     flex-direction: column;
     gap: 0.5rem;
   }
+}
+
+
+#themeToggle {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 section {
@@ -185,21 +243,6 @@ section {
 .hero-center p {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-}
-
-.download-cv {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #fff;
-  color: #007BFF;
-  font-weight: bold;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.download-cv:hover {
-  background-color: #f0f0f0;
 }
 
 .hero-bottom {

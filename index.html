@@ -19,10 +19,17 @@
 <body>
   <header>
     <div class="nav-container">
-      <h1>SHRISHA BAYARI</h1>
+      <div class="nav-left">
+        <h1>SHRISHA BAYARI</h1>
+      </div>
       <div class="nav-right">
-        <nav>
-          <ul>
+        <nav class="navbar">
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="nav-links" id="navLinks">
             <li><a href="#hero">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -30,9 +37,9 @@
             <li><a href="#education">Education</a></li>
             <li><a href="#achievements">Achievements</a></li>
             <li><a href="#contact">Contact</a></li>
+            <button id="themeToggle" aria-label="Toggle theme">🌙 Toggle Theme</button>
           </ul>
         </nav>
-        <button id="themeToggle" aria-label="Toggle theme">🌙 Toggle Theme</button>
       </div>
     </div>
   </header>
@@ -65,14 +72,14 @@
   
         <!-- Right Side: About + Skills -->
         <div class="hero-right">
-          <h3>About Me</h3>
+          <h2>About Me</h2>
           <p>Hello! I'm <strong>Shrisha Bayari</strong>, a passionate and detail-oriented <strong>Full-Stack Web Developer</strong> from Brahmavar, Udupi, Karnataka. I recently completed my MCA from <strong>Srinivas University, Mangalore</strong> with a CGPA of 7.83.</p>
           <p>Over the past year, I've built hands-on experience through multiple internships, working on real-world projects using the <strong>MERN stack (MongoDB, Express.js, React.js, Node.js)</strong>. I’ve developed and contributed to applications like <em>LSM</em> (a library management system), focusing on clean UI/UX and optimized backend functionality.</p>
           <p>I'm a <strong>quick learner</strong>, a <strong>good listener</strong>, and always eager to learn and adapt to new technologies. My goal is to create meaningful digital experiences and grow continuously as a developer while contributing to impactful projects.</p>
           <p>When I’m not coding, I love exploring AI tools like ChatGPT, improving my soft skills, and staying updated with the latest in tech.</p>
           <p><em>Let’s connect and build something awesome together!</em></p>
           <div class="skills-container">
-            <h3>Skills</h3>
+            <h2>Skills</h2>
             <div class="horizontal-scroll">
               <div class="icon-container">
                 <img src="assets/html.jpeg" alt="HTML">
