@@ -202,6 +202,7 @@ section {
 
 .hero-left {
   text-align: center;
+  margin-top: 55px;
 }
 
 .hero-left .img {
@@ -637,10 +638,41 @@ body.dark footer {
   color: #555;
 }
 
-.contact-info p {
-  margin: 5px 0;
-  font-size: 1.1rem;
+.social-icons {
+  display: flex;
+  justify-content: center; /* Centers the icons horizontally */
+  gap: 40px; /* Creates space between the icons */
+  margin-top: 15px;
 }
+
+.icon-links {
+  font-size: 4rem; /* Icon size */
+  color: #333; /* Default icon color */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and scaling */
+}
+
+.icon-links:hover {
+  color: #007bff; /* Color change when hovered */
+  transform: scale(1.2); /* Increase size to 120% when hovered */
+}
+
+.email-icons i {
+  color: #dd4b39; /* Email icon color */
+}
+
+.linkedin-icons i {
+  color: #0077b5; /* LinkedIn icon color */
+}
+
+.github-icons i {
+  color: #333; /* GitHub icon color */
+}
+
+/* Optional: Adding padding to make icons appear spaced nicely */
+.icon-links {
+  padding: 10px; /* Add space around the icons for better click area */
+}
+
 
 footer {
   text-align: center;
