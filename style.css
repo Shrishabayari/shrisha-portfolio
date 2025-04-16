@@ -1,7 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.container {
+  width: 100%;
 }
 
 html {
@@ -67,7 +65,7 @@ body {
 }
 
 header {
-  background: #fff; /* or your dark theme bg */
+  background: #fff;
   padding: 0rem 2rem;
   position: sticky;
   top: 0;
@@ -86,21 +84,20 @@ body.dark #themeToggle {
   color: #fff;
 }
 
-/* Dark mode for nav links */
 body.dark .nav-links {
   color: #fff;
   background-color: #000;
 }
 
-/* Dark mode for hamburger spans */
 body.dark .hamburger span {
   background-color: #fff;
 }
+
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* makes it stack on small screens */
+  flex-wrap: wrap;
 }
 
 .nav-right {
@@ -122,6 +119,7 @@ nav ul li a {
   color: #333;
   font-weight: 500;
 }
+
 /* Hamburger */
 .hamburger {
   display: none;
@@ -136,58 +134,6 @@ nav ul li a {
   background-color: #333;
   transition: all 0.3s ease;
 }
-
-/* Small screen styles */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 0px;
-    background-color: #fff;
-    flex-direction: column;
-    gap: 0px;
-    padding: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    border-radius: 10px;
-  }
-
-  
-  .nav-links.show {
-    display: flex;
-  }
-  .nav-icons{
-    display: flex;
-    flex-direction: row;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* allows wrapping only on small screens */
-    padding: 1rem 2rem;
-  }
-
-  .nav-left {
-    flex: 1; /* allows it to take available space */
-  }
-  
-  .nav-right {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-}
-
 
 #themeToggle {
   background: none;
@@ -260,7 +206,7 @@ section {
   width: 240px;
   height: 260px;
   border-radius: 50%;
-  object-fit:fill;
+  object-fit: fill;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   margin-bottom: 1rem;
 }
@@ -271,7 +217,7 @@ section {
 }
 
 .hero-right h3 {
-  margin-top: 0;
+  margin-top: 0px;
 }
 
 .skills-container h3 {
@@ -294,7 +240,7 @@ section {
   height: 50px;
   object-fit: contain;
   background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   transition: transform 0.2s ease;
 }
 
@@ -335,7 +281,7 @@ section {
 }
 
 .email-icon i {
-  color: #d44638; /* Gmail red */
+  color: #d44638;
 }
 
 .linkedin-icon i {
@@ -345,19 +291,6 @@ section {
 .github-icon i {
   color: #333;
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hero-bottom {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .hero-right, .hero-left .contact-info {
-    text-align: center;
-  }
-}
-
 
 body.light {
   background-color: #f4f4f4;
@@ -373,26 +306,32 @@ body.light nav a {
   color: #222;
 }
 
+body.dark #closeNav {
+  color: white;
+  border: 1px solid #666;
+}
+
 body.dark {
-  background-color: #121212; /* Black background for dark mode */
-  color: #f4f4f4; /* Light text for dark mode */
+  background-color: #121212;
+  color: #f4f4f4;
 }
 
 body.dark header {
-  background-color: #000; /* Black background for header */
-  color: #fff; /* White text for header */
+  background-color: #000;
+  color: #fff;
 }
 
 body.dark nav ul li a,
 body.dark #themeToggle {
-  color: #fff; /* White text for links and theme toggle */
+  color: #fff;
 }
 
 body.dark section {
-  background-color: #121212; /* Black background for all sections */
+  background-color: #121212;
 }
-body.dark .experience-item{
-  background-color: #121212; /* Dark background for project section */
+
+body.dark .experience-item {
+  background-color: #121212;
   color: #fff;
   border: 1px solid #fff;
 }
@@ -401,40 +340,41 @@ body.dark #experience,
 body.dark .experience-h3,
 body.dark .experience-h4,
 body.dark .experience-li,
-body.dark .duration{
-  background-color: #121212; /* Dark background for project section */
+body.dark .duration {
+  background-color: #121212;
   color: #fff;
- }
-body.dark .achievement-item{
-  background-color: #121212; /* Dark background for project section */
+}
+
+body.dark .achievement-item {
+  background-color: #121212;
   color: #fff;
   border: 1px solid #fff;
 }
+
 body.dark #achievements,
 body.dark .achievements-head,
 body.dark .achievements-h4,
 body.dark .achievements-p {
-  background-color: #121212; /* Dark background for project section */
+  background-color: #121212;
   color: #fff;
 }
 
 body.dark .modal-content {
-  background-color: #1e1e1e; /* Dark background for modal */
+  background-color: #1e1e1e;
 }
 
 body.dark .carousel-container {
-  background-color: #1e1e1e; /* Dark background for carousel */
+  background-color: #1e1e1e;
 }
 
 body.dark .carousel-slide {
-  background-color: #1e1e1e; /* Dark background for carousel slide */
+  background-color: #1e1e1e;
 }
 
 body.dark footer {
-  background-color: #000; /* Black background for footer */
-  color: #fff; /* White text for footer */
+  background-color: #000;
+  color: #fff;
 }
-
 
 #themeToggle {
   padding: 5px 10px;
@@ -443,17 +383,6 @@ body.dark footer {
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav li {
-    margin: 10px 0;
-  }
 }
 
 .project {
@@ -596,7 +525,6 @@ body.dark footer {
   background-color: #f9f9f9;
 }
 
-
 .experience-item {
   background-color: #ffffff;
   border-left: 5px solid #4caf50;
@@ -675,8 +603,57 @@ footer {
   color: #fff;
   margin-top: 2rem;
 }
+
 @media (max-width: 768px) {
-  /* Nav already handled */
+  .nav-links {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    padding: 2rem 1.5rem;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+
+  .nav-links.show {
+    left: 0;
+  }
+
+  .nav-links li {
+    margin-bottom: 1rem;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: black;
+    border-radius: 2px;
+  }
+
+  .close-btn {
+    align-self: flex-end;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: none;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+  }
+
+  .hero-bottom {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 
   .hero-center h2 {
     font-size: 2rem;
@@ -691,9 +668,14 @@ footer {
     height: 180px;
   }
 
-  .skills-container {
-    padding: 1rem;
+  .hero-right,
+  .hero-left .contact-info {
     text-align: center;
+  }
+
+  .skills-container {
+    text-align: center;
+    padding: 1rem;
   }
 
   .icon-container {
@@ -722,54 +704,65 @@ footer {
     font-size: 1.1rem;
   }
 
-  .carousel-container {
+  footer {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  #backToTop {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  #projects {
+    padding: 2rem 1rem;
+  }
+
+  .projects-container {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .project-thumbnail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .thumbnail-content img {
     width: 100%;
     height: auto;
-    max-width: 100%;
-    border: none;
+    max-width: 350px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
   }
 
-  .modal-content {
-    width: 90%;
-    margin: 20% auto;
-    padding: 1rem;
+  .thumbnail-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
   }
 
-  .slide {
-    height: auto;
-    max-height: 250px;
+  .thumbnail-content p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 0 0.5rem;
   }
 
-  .prev,
-  .next {
-    font-size: 1.5rem;
-    padding: 6px;
+  .thumbnail-content .btn.know-more {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
   }
+}
 
-  .contact-icons {
-    margin-top: 1rem;
-  }
-
-  .icon-link {
-    width: 35px;
-    height: 35px;
-    font-size: 16px;
-  }
-
-  .skill {
-    margin-bottom: 15px;
-  }
-
-  .progress-bar {
-    height: 16px;
-  }
-
-  .progress-bar-fill {
-    border-radius: 16px;
-  }
-
-  footer {
-    font-size: 0.9rem;
-    padding: 0.75rem;
+@media (min-width: 769px) {
+  #closeNav {
+    display: none;
   }
 }
