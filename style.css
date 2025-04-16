@@ -92,6 +92,11 @@ body.dark .nav-links {
 body.dark .hamburger span {
   background-color: #fff;
 }
+body.dark .email-icons i,
+body.dark .linkedin-icons i,
+body.dark .github-icons i {
+  color: #fff;
+}
 
 .nav-container {
   display: flex;
@@ -344,6 +349,7 @@ body.dark .experience-item {
   border: 1px solid #fff;
 }
 
+body.dark #skills,
 body.dark #experience,
 body.dark .experience-h3,
 body.dark .experience-h4,
@@ -365,6 +371,12 @@ body.dark .achievements-h4,
 body.dark .achievements-p {
   background-color: #121212;
   color: #fff;
+}
+
+body.dark .project-grid h3,
+body.dark .project-grid p
+{
+  color: #000;
 }
 
 body.dark .modal-content {
