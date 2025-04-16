@@ -138,18 +138,20 @@ window.addEventListener("DOMContentLoaded", () => {
     observer.observe(bar);
   });
 });
-
-let mybutton = document.getElementById("backToTop");
-
-window.onscroll = function() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+// Show button when user scrolls down even slightly
+window.onscroll = function () {
+  const mybutton = document.getElementById("backToTop");
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
   }
 };
 
-mybutton.onclick = function() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-};
+// Scroll to top when button is clicked
+document.getElementById("backToTop").addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});

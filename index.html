@@ -47,7 +47,7 @@
           </div>
         </div>
       </header>
-      <button id="backToTop" aria-label="Back to top">↑</button>
+      <button id="backToTop" title="Go to top">↑</button>
 
       <section id="hero">
         <div class="hero-grid">
@@ -157,33 +157,32 @@
           <div class="progress-bar" data-progress="80"></div>
         </div>
       </section>
-
       <section id="projects" class="projects fade-in fade-in-right" data-delay="200">
         <div class="projects-container">
           <h2>🚀 Projects</h2>
           <p>Take a look at some of my work</p>
-
-          <div class="project-thumbnail">
-            <div class="thumbnail-content">
-              <img src="assets/quiz.png" alt="Quiz Application" />
-              <h3>Quiz Application</h3>
-              <p>Interactive quiz app with multiple topics and scoring system.</p>
-              <a href="#" class="btn know-more" data-modal-target="#projectModal1"
-                aria-label="More details about the Quiz Application">Know More</a>
+      
+          <div class="project-grid">
+            <div class="project-thumbnail">
+              <div class="thumbnail-content">
+                <h3>Quiz Application</h3>
+                <p>Interactive quiz app with multiple topics and scoring system.</p>
+                <img src="assets/quiz.png" alt="Quiz Application" />
+                <a href="#" class="btn know-more" data-modal-target="#projectModal1">Know More</a>
+              </div>
             </div>
-          </div>
-
-          <div class="project-thumbnail">
-            <div class="thumbnail-content">
-              <img src="assets/netflix.webp" alt="Netflix Clone" />
-              <h3>Netflix Homepage Clone</h3>
-              <p>Responsive Netflix homepage using HTML & CSS.</p>
-              <a href="#" class="btn know-more" data-modal-target="#projectModal2"
-                aria-label="More details about the Netflix Homepage Clone">Know More</a>
+      
+            <div class="project-thumbnail">
+              <div class="thumbnail-content">
+                <h3>Netflix Homepage Clone</h3>
+                <img src="assets/netflix.webp" alt="Netflix Clone" />
+                <p>Responsive Netflix homepage using HTML & CSS.</p>
+                <a href="#" class="btn know-more" data-modal-target="#projectModal2">Know More</a>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </section>      
 
       <div id="projectModal1" class="Modal">
         <div class="modal-content">
@@ -191,21 +190,20 @@
           <h2>Quiz Application</h2>
           <hr>
           <div class="modal-body">
+            <p><strong>Short Project Overview:</strong> This quiz application allows users to pick a topic and answer multiple-choice questions.</p>
             <div class="modal-row">
               <div class="column description">
-                <p><strong>Short Project Overview:</strong> This quiz application allows users to pick a topic and answer
-                  multiple-choice questions.</p>
                 <h3>Project Details</h3>
                 <ul>
                   <li>Users can select quiz topics</li>
                   <li>Dynamic question and answer rendering</li>
-                  <li>Score tracking and result display</li><br>
+                  <li>Score tracking and result display</li>
                 </ul>
               </div>
               <div class="column image-carousel">
                 <div class="carousel-container">
                   <div class="carousel-slide">
-                    <img src="assets/quiz.png" alt="Quiz App" class="slide" />
+                    <img src="assets/quiz.png" alt="Quiz App" class="slide active" />
                     <img src="assets/q1.png" alt="Quiz App 1" class="slide" />
                     <img src="assets/q2.png" alt="Quiz App 2" class="slide" />
                     <img src="assets/q3.png" alt="Quiz App 3" class="slide" />
@@ -322,7 +320,7 @@
           </div>
         </div>
       </section>
-      
+
       <section id="contact" class="contact fade-in">
         <h2>Contact Me</h2>
         <p>Email: <a href="mailto:bayarishrisha@gmail.com"><i class="fas fa-envelope"></i>bayarishrisha@gmail.com</a></p>

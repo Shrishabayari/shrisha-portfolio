@@ -153,10 +153,12 @@ section {
   background-color: #007bff;
   color: white;
   border: none;
-  padding: 10px;
+  padding: 10px 14px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 20px;
+  display: none; /* Hidden by default */
+  z-index: 999;
 }
 
 #backToTop:hover {
@@ -216,7 +218,12 @@ section {
   line-height: 1.5;
 }
 
-.hero-right h3 {
+.hero-right {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.hero-right h2 {
   margin-top: 0px;
 }
 
@@ -385,12 +392,41 @@ body.dark footer {
   cursor: pointer;
 }
 
-.project {
-  background: #fff;
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+#skills{
+  background-color: #f9f9f9;
+}
+.projects-container {
+  padding: 20px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 columns on large screens, 1 on small */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project-thumbnail {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-thumbnail:hover {
+  transform: translateY(-5px);
+}
+
+.thumbnail-content {
+  padding: 10px;
+  text-align: center;
+}
+
+.thumbnail-content img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
 .Modal {
@@ -414,8 +450,23 @@ body.dark footer {
   max-width: 800px;
   position: relative;
 }
+.modal-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
 
-/* Image Carousel Container */
+.column.description {
+  flex: 1;
+  min-width: 300px;
+}
+
+.column.image-carousel {
+  flex: 1;
+  min-width: 300px;
+}
+
 .carousel-container {
   position: relative;
   width: 100%;
@@ -427,7 +478,6 @@ body.dark footer {
   background-color: #f0f0f0;
 }
 
-/* Each slide (image) */
 .carousel-slide {
   width: 100%;
   height: 100%;
@@ -436,7 +486,6 @@ body.dark footer {
   align-items: center;
 }
 
-/* Image inside carousel */
 .slide {
   width: 100%;
   height: 100%;
@@ -444,12 +493,10 @@ body.dark footer {
   display: none;
 }
 
-/* Active slide */
 .slide.active {
   display: block;
 }
 
-/* Left and Right Arrows */
 .prev, .next {
   position: absolute;
   top: 50%;
@@ -472,18 +519,13 @@ body.dark footer {
   right: 10px;
 }
 
-/* Optional: Add hover effect for arrows */
 .prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-body .description ul {
   list-style-type: disc;
-  margin-left: 25px;
-}
-
-.modal-body .description li {
-  margin-bottom: 10px;
+  margin-left: 5px;
 }
 
 .close {
