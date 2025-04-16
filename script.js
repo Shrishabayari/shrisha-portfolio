@@ -55,22 +55,23 @@ window.addEventListener("DOMContentLoaded", () => {
   body.classList.add(savedTheme);
 });
 
-const modalButtons = document.querySelectorAll(".know-more");
-modalButtons.forEach((button) => {
-  button.addEventListener("click", (e) => {
-    e.preventDefault();
-    const modalId = button.getAttribute("data-modal-target");
-    const modal = document.querySelector(modalId);
-    if (modal) modal.style.display = "block";
+// Open modal on image click
+document.querySelectorAll("[data-modal-target]").forEach(trigger => {
+  trigger.addEventListener("click", function () {
+    const modal = document.querySelector(this.getAttribute("data-modal-target"));
+    if (modal) {
+      modal.style.display = "block";
+    }
   });
 });
 
-const closeButtons = document.querySelectorAll(".close");
-closeButtons.forEach((closeBtn) => {
-  closeBtn.addEventListener("click", () => {
-    closeBtn.closest(".Modal").style.display = "none";
+// Close modal on '×' click
+document.querySelectorAll(".close").forEach(closeBtn => {
+  closeBtn.addEventListener("click", function () {
+    this.closest(".Modal").style.display = "none";
   });
 });
+
 
 window.addEventListener("click", (e) => {
   document.querySelectorAll(".Modal").forEach((modal) => {

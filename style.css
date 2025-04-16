@@ -417,6 +417,10 @@ body.dark footer {
   transform: translateY(-5px);
 }
 
+.clickable-image {
+  cursor: pointer;
+}
+
 .thumbnail-content {
   padding: 10px;
   text-align: center;
