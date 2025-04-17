@@ -169,6 +169,14 @@ section {
 #backToTop:hover {
   background-color: #0056b3;
 }
+.section-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+  position: relative;
+}
 
 #hero {
   padding: 1rem 1rem;
@@ -695,7 +703,9 @@ body.dark footer {
   background-color: #0056b3;
 }
 
-
+.alt-contact-heading{
+  margin-top: 50px;
+}
 /* Social Icons Container */
 .social-icons {
   display: flex;
@@ -785,6 +795,10 @@ footer {
     background: none;
     border: 1px solid #ccc;
     padding: 5px 10px;
+  }
+  
+  .section-heading {
+    font-size: 1.8rem;
   }
 
   .hero-bottom {
