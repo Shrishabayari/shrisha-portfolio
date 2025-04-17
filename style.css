@@ -650,41 +650,88 @@ body.dark footer {
   color: #555;
 }
 
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background-color: #fff; /* Optional: keeps it bright even in dark mode */
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Social Icons Container */
 .social-icons {
   display: flex;
-  justify-content: center; /* Centers the icons horizontally */
-  gap: 40px; /* Creates space between the icons */
+  justify-content: center;
+  gap: 40px;
   margin-top: 15px;
+  list-style: none;
+  padding: 0;
 }
 
+/* Base Icon Styles */
 .icon-links {
-  font-size: 4rem; /* Icon size */
-  color: #333; /* Default icon color */
-  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and scaling */
+  font-size: 4rem;
+  color: #333; /* Default color */
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding: 10px; /* Better click area */
+  border-radius: 50%;
 }
 
+/* Hover Effects */
 .icon-links:hover {
-  color: #007bff; /* Color change when hovered */
-  transform: scale(1.2); /* Increase size to 120% when hovered */
+  transform: scale(1.2);
 }
 
+/* Individual Platform Colors */
 .email-icons i {
-  color: #dd4b39; /* Email icon color */
+  color: #dd4b39;
 }
 
 .linkedin-icons i {
-  color: #0077b5; /* LinkedIn icon color */
+  color: #0077b5;
 }
 
 .github-icons i {
-  color: #333; /* GitHub icon color */
+  color: #333;
 }
-
-/* Optional: Adding padding to make icons appear spaced nicely */
-.icon-links {
-  padding: 10px; /* Add space around the icons for better click area */
-}
-
 
 footer {
   text-align: center;
@@ -848,6 +895,15 @@ footer {
     font-size: 1rem;
     padding: 0.6rem 1.2rem;
     border-radius: 6px;
+  }
+
+  .icon-links {
+    font-size: 3rem;
+    padding: 8px;
+  }
+
+  .social-icons {
+    gap: 25px;
   }
 }
 
