@@ -1,3 +1,4 @@
+/* Base Styles */
 .container {
   width: 100%;
 }
@@ -6,6 +7,15 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Transitions */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -41,11 +51,13 @@ html {
   transition-delay: 0.4s;
 }
 
-.btn, button {
+.btn,
+button {
   transition: background-color 0.3s, transform 0.3s;
 }
 
-.btn:hover, button:hover {
+.btn:hover,
+button:hover {
   transform: scale(1.05);
 }
 
@@ -57,14 +69,7 @@ img:hover {
   transform: scale(1.03);
 }
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
-  transition: background-color 0.5s ease, color 0.5s ease;
-}
-
+/* Header Section */
 header {
   background: #fff;
   padding: 0rem 2rem;
@@ -72,31 +77,6 @@ header {
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Dark mode */
-body.dark header {
-  background-color: #000;
-  color: #fff;
-}
-
-body.dark nav ul li a,
-body.dark #themeToggle {
-  color: #fff;
-}
-
-body.dark .nav-links {
-  color: #fff;
-  background-color: #000;
-}
-
-body.dark .hamburger span {
-  background-color: #fff;
-}
-body.dark .email-icons i,
-body.dark .linkedin-icons i,
-body.dark .github-icons i {
-  color: #fff;
 }
 
 .nav-container {
@@ -126,7 +106,7 @@ nav ul li a {
   font-weight: 500;
 }
 
-/* Hamburger */
+/* Hamburger Menu */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -146,39 +126,22 @@ nav ul li a {
   border: none;
   font-size: 1rem;
   cursor: pointer;
-}
-
-section {
-  padding: 2rem;
-}
-
-#backToTop {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 14px;
+  padding: 5px 10px;
+  background-color: #888;
+  color: #fff;
   border-radius: 5px;
+}
+
+#closeNav {
+  align-self: flex-end;
+  font-size: 1.2rem;
   cursor: pointer;
-  font-size: 20px;
-  display: none; /* Hidden by default */
-  z-index: 999;
+  background: none;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
 }
 
-#backToTop:hover {
-  background-color: #0056b3;
-}
-.section-heading {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  color: #000;
-  margin-bottom: 20px;
-  position: relative;
-}
-
+/* Hero Section */
 #hero {
   padding: 1rem 1rem;
   background-color: #007BFF;
@@ -242,34 +205,6 @@ section {
   margin-top: 0px;
 }
 
-.skills-container h3 {
-  margin-bottom: 1rem;
-}
-
-.horizontal-scroll {
-  overflow-x: auto;
-  padding-bottom: 1rem;
-}
-
-.icon-container {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
-.icon-container img {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease;
-}
-
-.icon-container img:hover {
-  transform: scale(1.1);
-}
-
 .contact-icons {
   margin-top: 1rem;
   text-align: center;
@@ -314,120 +249,79 @@ section {
   color: #333;
 }
 
-body.light {
-  background-color: #f4f4f4;
-  color: #222;
-}
-
-body.light header {
-  background-color: #fff;
-  color: black;
-}
-
-body.light nav a {
-  color: #222;
-}
-
-body.dark #closeNav {
-  color: white;
-  border: 1px solid #666;
-}
-
-body.dark {
-  background-color: #121212;
-  color: #f4f4f4;
-}
-
-body.dark .section-heading,
-body.dark .section-subtitle, 
-body.dark .last-updated {
-color: #fff;
-}
-
-body.dark header{
-  background-color: #000;
-  color: #fff;
-}
-
-body.dark nav ul li a,
-body.dark #themeToggle {
-  color: #fff;
-}
-
-body.dark section {
-  background-color: #121212;
-}
-
-body.dark .experience-item {
-  background-color: #121212;
-  color: #fff;
-  border: 1px solid #fff;
-}
-
-body.dark #skills,
-body.dark #experience,
-body.dark .experience-h3,
-body.dark .experience-h4,
-body.dark .experience-li,
-body.dark .duration {
-  background-color: #121212;
-  color: #fff;
-}
-
-body.dark .achievement-item {
-  background-color: #121212;
-  color: #fff;
-  border: 1px solid #fff;
-}
-
-body.dark #achievements,
-body.dark .achievements-head,
-body.dark .achievements-h4,
-body.dark .achievements-p {
-  background-color: #121212;
-  color: #fff;
-}
-
-body.dark .project-grid h3,
-body.dark .project-grid p
-{
-  color: #fff;
-}
-
-body.dark .modal-content {
-  background-color: #1e1e1e;
-  border: 1px solid #fff;
-}
-
-body.dark .project-thumbnail {
-border: 1px solid #fff;
-}
-
-body.dark .carousel-container {
-  background-color: #1e1e1e;
-}
-
-body.dark .carousel-slide {
-  background-color: #1e1e1e;
-}
-
-body.dark footer {
-  background-color: #000;
-  color: #fff;
-}
-
-#themeToggle {
-  padding: 5px 10px;
-  border: none;
-  background-color: #888;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#skills{
+/* Skills Section */
+#skills {
+  padding: 2rem;
   background-color: #f9f9f9;
 }
+
+.section-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.skills-container h3 {
+  margin-bottom: 1rem;
+}
+
+.horizontal-scroll {
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.icon-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.icon-container img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.icon-container img:hover {
+  transform: scale(1.1);
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill p {
+  margin: 0 0 5px;
+  font-weight: bold;
+}
+
+.progress-bar {
+  background-color: #ddd;
+  border-radius: 20px;
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  width: 0;
+  background-color: #4caf50;
+  border-radius: 20px;
+  transition: width 1s ease-in-out;
+}
+
+/* Projects Section */
+#projects {
+  padding: 2rem;
+}
+
 .projects-container {
   padding: 20px;
 }
@@ -487,6 +381,7 @@ body.dark footer {
   max-width: 800px;
   position: relative;
 }
+
 .modal-row {
   display: flex;
   flex-wrap: wrap;
@@ -534,7 +429,8 @@ body.dark footer {
   display: block;
 }
 
-.prev, .next {
+.prev,
+.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -556,7 +452,8 @@ body.dark footer {
   right: 10px;
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -574,31 +471,7 @@ body.dark footer {
   cursor: pointer;
 }
 
-.skill {
-  margin-bottom: 20px;
-}
-
-.skill p {
-  margin: 0 0 5px;
-  font-weight: bold;
-}
-
-.progress-bar {
-  background-color: #ddd;
-  border-radius: 20px;
-  height: 20px;
-  overflow: hidden;
-  position: relative;
-}
-
-.progress-bar-fill {
-  height: 100%;
-  width: 0;
-  background-color: #4caf50;
-  border-radius: 20px;
-  transition: width 1s ease-in-out;
-}
-
+/* Experience Section */
 #experience {
   padding: 40px 20px;
   background-color: #f9f9f9;
@@ -640,6 +513,7 @@ body.dark footer {
   color: #444;
 }
 
+/* Achievements Section */
 #achievements {
   padding: 40px 20px;
   background-color: #fff;
@@ -670,7 +544,7 @@ body.dark footer {
   color: #555;
 }
 
-
+/* Resume Section */
 .resume-section {
   padding: 80px 20px;
   background-color: #fff;
@@ -788,9 +662,10 @@ body.dark footer {
   background-color: #0056b3;
 }
 
-.alt-contact-heading{
+.alt-contact-heading {
   margin-top: 50px;
 }
+
 /* Social Icons Container */
 .social-icons {
   display: flex;
@@ -828,6 +703,7 @@ body.dark footer {
   color: #333;
 }
 
+/* Footer Section */
 footer {
   text-align: center;
   padding: 1rem;
@@ -836,6 +712,108 @@ footer {
   margin-top: 2rem;
 }
 
+/* Dark Mode Styles */
+body.dark {
+  background-color: #121212;
+  color: #f4f4f4;
+}
+
+body.dark .section-heading,
+body.dark .section-subtitle,
+body.dark .last-updated {
+  color: #fff;
+}
+
+body.dark header {
+  background-color: #000;
+  color: #fff;
+}
+
+body.dark nav ul li a,
+body.dark #themeToggle {
+  color: #fff;
+}
+
+body.dark .nav-links {
+  color: #fff;
+  background-color: #000;
+}
+
+body.dark .hamburger span {
+  background-color: #fff;
+}
+
+body.dark .email-icons i,
+body.dark .linkedin-icons i,
+body.dark .github-icons i {
+  color: #fff;
+}
+
+body.dark section {
+  background-color: #121212;
+}
+
+body.dark .experience-item {
+  background-color: #121212;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+body.dark #skills,
+body.dark #experience,
+body.dark .experience-h3,
+body.dark .experience-h4,
+body.dark .experience-li,
+body.dark .duration {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark .achievement-item {
+  background-color: #121212;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+body.dark #achievements,
+body.dark .achievements-head,
+body.dark .achievements-h4,
+body.dark .achievements-p {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark .project-grid h3,
+body.dark .project-grid p {
+  color: #fff;
+}
+
+body.dark .modal-content {
+  background-color: #1e1e1e;
+  border: 1px solid #fff;
+}
+
+body.dark .project-thumbnail {
+  border: 1px solid #fff;
+}
+
+body.dark .carousel-container {
+  background-color: #1e1e1e;
+}
+
+body.dark .carousel-slide {
+  background-color: #1e1e1e;
+}
+body.dark .close-btn {
+  color: #fff;
+}
+
+body.dark footer {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
   .nav-links {
     flex-direction: column;
@@ -854,7 +832,8 @@ footer {
   .nav-links.show {
     left: 0;
   }
- nav ul {
+
+  nav ul {
     flex-direction: column;
     background-color: #fff;
     position: absolute;
@@ -885,15 +864,6 @@ footer {
     height: 3px;
     background: black;
     border-radius: 2px;
-  }
-
-  .close-btn {
-    align-self: flex-end;
-    font-size: 1.2rem;
-    cursor: pointer;
-    background: none;
-    border: 1px solid #ccc;
-    padding: 5px 10px;
   }
 
   .section-heading {
@@ -1019,7 +989,7 @@ footer {
   .social-icons {
     gap: 25px;
   }
-  
+
   .resume-section {
     padding: 60px 15px;
   }
@@ -1073,6 +1043,16 @@ footer {
 
   .last-updated {
     font-size: 0.7rem;
+  }
+
+  .icon-links {
+    font-size: 2.5rem;
+    padding: 6px;
+    gap: 20px;
+  }
+
+  .social-icons {
+    gap: 20px;
   }
 }
 
