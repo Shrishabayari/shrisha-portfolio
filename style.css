@@ -658,6 +658,79 @@ body.dark footer {
   color: #555;
 }
 
+
+.resume-section {
+  padding: 80px 20px;
+  background-color: var(--section-bg);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.resume-section .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.resume-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.download-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.view-btn {
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+}
+
+.view-btn:hover {
+  background-color: #d8d8d8;
+  transform: translateY(-2px);
+}
+
+.last-updated {
+  font-size: 0.9rem;
+  color: #999;
+  margin-top: 10px;
+}
+
 /* Contact Section */
 .contact {
   text-align: center;
@@ -796,7 +869,7 @@ footer {
     border: 1px solid #ccc;
     padding: 5px 10px;
   }
-  
+
   .section-heading {
     font-size: 1.8rem;
   }
@@ -817,6 +890,7 @@ footer {
   .hero-left .img {
     width: 180px;
     height: 180px;
+    margin-top: -80px;
   }
 
   .hero-right,
@@ -918,6 +992,61 @@ footer {
 
   .social-icons {
     gap: 25px;
+  }
+  
+  .resume-section {
+    padding: 60px 15px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .resume-actions {
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+
+  .last-updated {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-section {
+    padding: 50px 10px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+  }
+
+  .resume-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+
+  .last-updated {
+    font-size: 0.7rem;
   }
 }
 
