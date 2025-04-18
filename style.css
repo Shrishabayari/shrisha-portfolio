@@ -62,6 +62,7 @@ body {
   line-height: 1.6;
   background-color: #f4f4f4;
   color: #333;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 header {
@@ -337,7 +338,13 @@ body.dark {
   color: #f4f4f4;
 }
 
-body.dark header {
+body.dark .section-heading,
+body.dark .section-subtitle, 
+body.dark .last-updated {
+color: #fff;
+}
+
+body.dark header{
   background-color: #000;
   color: #fff;
 }
@@ -384,11 +391,16 @@ body.dark .achievements-p {
 body.dark .project-grid h3,
 body.dark .project-grid p
 {
-  color: #000;
+  color: #fff;
 }
 
 body.dark .modal-content {
   background-color: #1e1e1e;
+  border: 1px solid #fff;
+}
+
+body.dark .project-thumbnail {
+border: 1px solid #fff;
 }
 
 body.dark .carousel-container {
@@ -661,8 +673,8 @@ body.dark footer {
 
 .resume-section {
   padding: 80px 20px;
-  background-color: var(--section-bg);
-  color: var(--text-color);
+  background-color: #fff;
+  color: #000;
   text-align: center;
 }
 
@@ -715,13 +727,13 @@ body.dark footer {
 }
 
 .view-btn {
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: #28a745;
+  color: #fff;
   border: none;
 }
 
 .view-btn:hover {
-  background-color: #d8d8d8;
+  background-color: #1e7e34;
   transform: translateY(-2px);
 }
 
@@ -841,6 +853,20 @@ footer {
 
   .nav-links.show {
     left: 0;
+  }
+ nav ul {
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    padding: 1rem;
+  }
+
+  nav ul.show {
+    display: flex;
   }
 
   .nav-links li {
