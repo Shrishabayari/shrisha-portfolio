@@ -990,8 +990,8 @@ body.dark footer {
   
   .carousel-container {
     height: 260px;
-    width: 380px;
-    margin-left: 15px;
+    width: 350px;
+    margin-left: 5px;
   }
 
   .thumbnail-content img,
@@ -1026,6 +1026,7 @@ body.dark footer {
     max-width: 350px;
     border-radius: 8px;
     margin-bottom: 1rem;
+    object-fit: contain;
   }
 
   .thumbnail-content h2 {
