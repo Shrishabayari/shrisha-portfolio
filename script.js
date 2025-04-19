@@ -1,3 +1,4 @@
+//Header/Navbar Toggle
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.getElementById("hamburger");
   const navLinks = document.getElementById("navLinks");
@@ -20,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+//Scroll Animations
 const faders = document.querySelectorAll(".fade-in");
 const appearOptions = {
   threshold: 0.2,
@@ -40,6 +42,7 @@ faders.forEach((fader) => {
   appearOnScroll.observe(fader);
 });
 
+//Theme Toggle (Dark/Light Mode)
 const toggleBtn = document.getElementById("themeToggle");
 const body = document.body;
 toggleBtn.addEventListener("click", () => {
@@ -72,7 +75,7 @@ document.querySelectorAll(".close").forEach(closeBtn => {
   });
 });
 
-
+// Close modal when clicking outside of it
 window.addEventListener("click", (e) => {
   document.querySelectorAll(".Modal").forEach((modal) => {
     if (e.target === modal) {
@@ -81,6 +84,7 @@ window.addEventListener("click", (e) => {
   });
 });
 
+// Image carousel (slide navigation)
 document.querySelectorAll(".Modal").forEach((modal) => {
   const slides = modal.querySelectorAll(".slide");
   const prev = modal.querySelector(".prev");
@@ -111,6 +115,7 @@ document.querySelectorAll(".Modal").forEach((modal) => {
   }
 });
 
+// Initialize progress bars
 window.addEventListener("DOMContentLoaded", () => {
   const progressBars = document.querySelectorAll(".progress-bar");
   progressBars.forEach((bar) => {
