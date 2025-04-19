@@ -831,11 +831,6 @@ body.dark .achievements-p {
   color: #fff;
 }
 
-body.dark .project-grid h3,
-body.dark .project-grid p {
-  color: #fff;
-}
-
 body.dark .modal-content {
   background-color: #1e1e1e;
   border: 1px solid #fff;
@@ -844,10 +839,11 @@ body.dark .modal-content {
 body.dark .project-grid h2,
  body.dark .project-grid p
  {
-   color: #000;
+   color: #fff;
  }
 body.dark .project-thumbnail {
   border: 1px solid #fff;
+  background-color: #1e1e1e;
 }
 
 body.dark .carousel-container {
