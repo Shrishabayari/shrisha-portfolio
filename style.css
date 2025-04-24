@@ -987,7 +987,7 @@ body.dark footer {
   }
 
   .Modal {
-    width: 98%; /* Make modal take up more width on smaller screens */
+    width: 95%; /* Make modal take up more width on smaller screens */
     margin: 10% auto; /* Adjust top margin */
   }
 
