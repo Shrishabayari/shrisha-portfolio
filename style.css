@@ -393,8 +393,7 @@ nav ul li a {
 
 .thumbnail-content img {
   width: 100%;
-  height: auto; /* Make image height responsive */
-  max-width: 350px;
+  height: 360px;
   border-radius: 8px;
   margin-top: 10px;
   object-fit: cover;
@@ -448,8 +447,7 @@ nav ul li a {
 .column.image-carousel,
 .column.carousel {
   flex: 1;
-  min-width: 300px; /* Adjust for smaller screens */
-}
+  min-width: 500px;}
 
 .modal-body .description ul {
   list-style-type: disc;
@@ -989,7 +987,7 @@ body.dark footer {
   }
 
   .Modal {
-    width: 90%; /* Make modal take up more width on smaller screens */
+    width: 95%; /* Make modal take up more width on smaller screens */
     margin: 10% auto; /* Adjust top margin */
   }
 
