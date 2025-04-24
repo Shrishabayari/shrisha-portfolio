@@ -337,11 +337,13 @@ nav ul li a {
 
 /* Projects Section */
 #projects {
-  padding: 2rem;
+  padding: 2rem 1rem;
 }
 
 .projects-container {
-  padding: 20px;
+  width: 100%;
+  padding: 0;
+  text-align: center;
 }
 
 .project-grid {
@@ -391,11 +393,12 @@ nav ul li a {
 
 .thumbnail-content img {
   width: 100%;
-  height: 360px;
-  object-fit: cover;
-  border: 1px solid #ddd;
+  height: auto; /* Make image height responsive */
+  max-width: 350px;
   border-radius: 8px;
   margin-top: 10px;
+  object-fit: cover;
+  border: 1px solid #ddd;
   transition: transform 0.3s ease;
 }
 
@@ -425,7 +428,7 @@ nav ul li a {
   margin: 5% auto;
   padding: 20px;
   border-radius: 8px;
-  width: 90%;
+  width: 90%; /* Adjust for smaller screens */
   max-width: 900px;
   position: relative;
 }
@@ -445,7 +448,7 @@ nav ul li a {
 .column.image-carousel,
 .column.carousel {
   flex: 1;
-  min-width: 500px;
+  min-width: 300px; /* Adjust for smaller screens */
 }
 
 .modal-body .description ul {
@@ -467,7 +470,7 @@ nav ul li a {
   position: relative;
   width: 100%;
   max-width: 500px;
-  height: 300px;
+  height: auto; /* Make carousel height responsive */
   overflow: hidden;
   margin: 0 auto;
   border: 2px solid #ddd;
@@ -484,8 +487,8 @@ nav ul li a {
 
 .slide {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto; /* Make slide image height responsive */
+  object-fit: contain;
   display: none;
   border-radius: 5px;
 }
@@ -837,10 +840,10 @@ body.dark .modal-content {
 }
 
 body.dark .project-grid h2,
- body.dark .project-grid p
- {
-   color: #fff;
- }
+body.dark .project-grid p {
+  color: #fff;
+}
+
 body.dark .project-thumbnail {
   border: 1px solid #fff;
   background-color: #1e1e1e;
@@ -853,6 +856,7 @@ body.dark .carousel-container {
 body.dark .carousel-slide {
   background-color: #1e1e1e;
 }
+
 body.dark .close-btn {
   color: #fff;
 }
@@ -984,70 +988,54 @@ body.dark footer {
     padding: 8px 12px;
   }
 
-  .Modal{
-    width: 420px;
+  .Modal {
+    width: 90%; /* Make modal take up more width on smaller screens */
+    margin: 10% auto; /* Adjust top margin */
   }
-  
+
   .carousel-container {
-    height: 260px;
-    width: 350px;
-    margin-left: 5px;
+    height: auto; /* Adjust height based on content */
+    width: 100%; /* Take full width */
+    margin-left: 0; /* Reset margin */
   }
 
   .thumbnail-content img,
   .carousel-slide .slide {
-    height: 260px;
+    height: auto; /* Adjust height based on content */
   }
 
   #projects {
-    padding: 2rem 1rem;
-  }
-
-  .projects-container {
-    width: 100%;
-    padding: 0;
-    text-align: center;
+    padding: 2rem 0.5rem; /* Adjust padding */
   }
 
   .project-thumbnail {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    background-color: var(--card-bg);
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem; /* Adjust margin */
+    padding: 0.5rem; /* Adjust padding */
   }
 
   .thumbnail-content img {
-    width: 100%;
-    height: auto;
-    max-width: 350px;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    object-fit: contain;
+    max-width: 100%; /* Ensure image fits within thumbnail */
+    margin-bottom: 0.5rem; /* Adjust margin */
   }
 
   .thumbnail-content h2 {
-    font-size: 1.3rem;
-    margin: -1rem 0rem;
-    padding: 0rem;
+    font-size: 1.1rem; /* Adjust font size */
+    margin: -0.5rem 0rem; /* Adjust margin */
   }
 
   .thumbnail-content p {
-    font-size: 1rem;
-    margin: -1rem 0rem;
-    padding: 0 0.1rem;
+    font-size: 0.9rem; /* Adjust font size */
+    margin: -0.5rem 0rem; /* Adjust margin */
+    padding: 0 0.2rem; /* Adjust padding */
   }
 
   .icon-links {
-    font-size: 3rem;
-    padding: 8px;
+    font-size: 2.5rem; /* Adjust icon size */
+    padding: 6px; /* Adjust padding */
   }
 
   .social-icons {
-    gap: 25px;
+    gap: 15px; /* Adjust gap */
   }
 
   .resume-section {
@@ -1074,6 +1062,23 @@ body.dark footer {
 
   .last-updated {
     font-size: 0.8rem;
+  }
+
+  .modal-row {
+    flex-direction: column; /* Stack columns on smaller screens */
+  }
+
+  .column.description,
+  .column.image-carousel,
+  .column.carousel {
+    min-width: auto; /* Allow columns to take full width */
+    width: 100%;
+  }
+
+  .carousel-container {
+    max-width: 100%; /* Ensure carousel fits within modal */
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
