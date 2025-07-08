@@ -169,25 +169,74 @@
           <p>Take a look at some of my work</p>
       
           <div class="project-grid">
+             <div class="project-thumbnail">
+              <div class="thumbnail-content">
+                <h2>EV Charge Hub</h2>
+                <p>An intelligent web-based platform developed to manage and streamline electric vehicle (EV) recharge bunk operations, enabling real-time slot booking, user management, and admin control.</p>
+                <img src="assets/p1.png" alt="Ev Application screenshot" class="clickable-image" data-modal-target="#projectModal1" />
+              </div>
+            </div>
             <div class="project-thumbnail">
               <div class="thumbnail-content">
                 <h2>Quiz Application</h2>
                 <p>Interactive quiz app with multiple topics and scoring system.</p>
-                <img src="assets/p11.png" alt="Quiz Application screenshot" class="clickable-image" data-modal-target="#projectModal1" />
+                <img src="assets/p11.png" alt="Quiz Application screenshot" class="clickable-image" data-modal-target="#projectModal2" />
               </div>
             </div>
             <div class="project-thumbnail">
               <div class="thumbnail-content">
                 <h2>SLMS (Srinivas Library Management System)</h2>
                 <p>A comprehensive web-based library management system developed for Srinivas University to streamline and digitize library operations.</p>
-                <img src="assets/p21.png" alt="SLMS screenshot" class="clickable-image" data-modal-target="#projectModal2" />
+                <img src="assets/p21.png" alt="SLMS screenshot" class="clickable-image" data-modal-target="#projectModal3" />
               </div>
             </div>            
           </div>
         </div>
-      </section>      
+      </section>  
 
       <div id="projectModal1" class="Modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>EV Charge Hub</h2>
+          <hr>
+          <div class="modal-body">
+            <p><strong>Short Project Overview:</strong> EV Charge Hub is a smart web-based application designed to efficiently manage electric vehicle (EV) recharge stations. The platform allows users to locate nearby recharge bunks, book time slots in real-time, and manage their appointments. Admins and station managers can oversee bookings, update slot availability, and analyze performance through intuitive dashboards.</p>
+
+            <div class="modal-row">
+              <div class="column description">
+                <h3>Project Details</h3>
+                <ul>
+                  <li>EV Bunk search and Google Maps location display</li>
+                  <li>Time-slot-based recharge booking with rescheduling and cancellation</li>
+                  <li>Admin panel to manage users, bunks, and bookings</li>
+                  <li>Dynamic slot availability based on date and time</li>
+                  <li>Booking status update (Pending, Confirmed, Cancelled)</li>
+                  <li>JWT-based authentication for user and admin roles</li>
+                  <li>Mobile-first responsive UI with real-time feedback</li>
+                </ul>
+              </div>
+              <div class="column image-carousel">
+                <div class="carousel-container">
+                  <div class="carousel-slide">
+                    <img src="assets/p1.png" alt="EV Charge Hub Home" class="slide active" />
+                    <img src="assets/p2.png" alt="Booking page" class="slide" />
+                    <img src="assets/p3.png" alt="User dashboard" class="slide" />
+                    <img src="assets/p4.png" alt="Admin Panel" class="slide" />
+                    <img src="assets/p5.png" alt="Slot availability" class="slide" />
+                    <img src="assets/p6.png" alt="Booking History" class="slide" />
+                    <img src="assets/p7.png" alt="Slot availability" class="slide" />
+                    <img src="assets/p8.png" alt="Booking History" class="slide" />
+                  </div>
+                  <a class="prev" aria-label="Previous slide">&#10094;</a>
+                  <a class="next" aria-label="Next slide">&#10095;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+
+      <div id="projectModal2" class="Modal">
         <div class="modal-content">
           <span class="close">&times;</span>
           <h2>Quiz Application</h2>
@@ -223,7 +272,7 @@
         </div>
       </div>
 
-      <div id="projectModal2" class="Modal">
+      <div id="projectModal3" class="Modal">
         <div class="modal-content">
           <span class="close">&times;</span>
           <h2>SLMS (Srinivas Library Management System)</h2>
@@ -234,15 +283,6 @@
             <div class="modal-row">
               <div class="column description">
                 <h3>Project Details</h3>
-                <ul>
-                  <li><strong>Platform:</strong> Web-Based Application (MERN Stack)</li>
-                  <li><strong>Frontend:</strong> React.js, HTML5, CSS3, JavaScript, Material UI</li>
-                  <li><strong>Backend:</strong> Node.js, Express.js</li>
-                  <li><strong>Database:</strong> MongoDB (via Mongoose)</li>
-                  <li><strong>APIs:</strong> RESTful APIs with secure authentication</li>
-                  <li><strong>Libraries/Tools:</strong> Axios, Font Awesome, Cloudinary</li>
-                </ul>
-                <h4>Key Functionalities</h4>
                 <ul>
                   <li>Secure login/logout for admins and students</li>
                   <li>Admin Dashboard with total stats and quick actions</li>
@@ -349,23 +389,6 @@
             <p class="achievements-p"><strong>Aframe Technologies</strong> - Completed Full-Stack Bootcamp with hands-on projects on MERN Stack
             </p>
           </div>
-        </div>
-      </section>
-
-      <!-- Resume Section -->
-      <section id="resume" class="resume-section">
-        <div class="container">
-          <h2 class="section-heading">Resume</h2>
-          <p class="section-subtitle">Click below to view or download my resume (PDF).</p>
-          <div class="resume-actions">
-            <a href="assets/ShrishaBayariCV.pdf" download class="btn download-btn">
-              <i class="fas fa-download"></i> Download Resume
-            </a>
-            <a href="assets/ShrishaBayariCV.pdf" target="_blank" class="btn view-btn">
-              <i class="fas fa-eye"></i> View Resume
-            </a>
-          </div>
-          <p class="last-updated">Last updated: <span>April 2025</span></p>
         </div>
       </section>
 
