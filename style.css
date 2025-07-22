@@ -70,12 +70,16 @@ img:hover {
 
 /* Header Section */
 header {
-  background: #fff;
-  padding: 0rem 2rem;
-  position: sticky;
+  position: fixed !important;
   top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  left: 0;
+  right: 0;
+  z-index: 1000 !important;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0rem 2rem;
 }
 
 .nav-container {
@@ -103,6 +107,34 @@ nav ul li a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
+}
+
+.nav-links a {
+  position: relative;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links a.active {
+  color: #007bff; 
+  font-weight: 600;
+  transform: translateY(-1px);
+}
+
+.nav-links a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #007bff; 
+  border-radius: 1px;
+  animation: slideIn 0.3s ease;
+}
+
+.nav-links a:not(.active):hover {
+  color: #0056b3;
+  transform: translateY(-1px);
 }
 
 /* Hamburger Menu */
@@ -145,6 +177,7 @@ nav ul li a {
   padding: 1rem 1rem;
   background-color: #007BFF;
   color: white;
+  margin-top: 100px;
 }
 
 .hero-grid {
@@ -759,6 +792,25 @@ nav ul li a {
   color: #333;
 }
 
+.contact-form input:invalid,
+.contact-form textarea:invalid {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.contact-form input:valid,
+.contact-form textarea:valid {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
 /* Footer Section */
 footer {
   text-align: center;
@@ -908,6 +960,18 @@ body.dark footer {
 
   .nav-links li {
     margin-bottom: 1rem;
+  }
+
+  .nav-links a.active::after {
+    bottom: -3px;
+    height: 2px;
+  }
+  
+  .nav-links a.active {
+    background-color: rgba(0, 123, 255, 0.1);
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin: 2px 0;
   }
 
   .hamburger {
@@ -1090,5 +1154,14 @@ body.dark footer {
 @media (min-width: 769px) {
   #closeNav {
     display: none;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
