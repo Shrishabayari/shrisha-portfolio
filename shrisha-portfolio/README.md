@@ -2,7 +2,6 @@
 
 A modern, responsive portfolio website showcasing my skills, projects, and experience as a Full-Stack Web Developer.
 
-![Portfolio Screenshot](assets/ShrishaBayari.jpg)
 
 ## 🚀 Live Demo
 
